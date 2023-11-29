@@ -312,7 +312,6 @@ data['year'] = data['year'].dt.year
 number_cols = ['valence', 'year', 'acousticness', 'danceability', 'duration_ms', 'energy', 'explicit',
                'instrumentalness', 'liveness', 'loudness', 'popularity', 'speechiness', 'tempo']
 
-<<<<<<< HEAD:copia_de_music_recommendation_system.py
 """## Spoti"""
 =======
 """## Spotipy
