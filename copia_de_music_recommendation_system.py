@@ -313,7 +313,6 @@ number_cols = ['valence', 'year', 'acousticness', 'danceability', 'duration_ms',
                'instrumentalness', 'liveness', 'loudness', 'popularity', 'speechiness', 'tempo']
 
 """## Spoti"""
-=======
 """## Spotipy
 * [Spotipy](https://spotipy.readthedocs.io/en/2.16.1/) es un cliente de Python para la API web de Spotify que facilita a los desarrolladores obtener datos y consultar el catálogo de canciones de Spotify. Lo instalamos usando `pip install spotipy`.
 * Después de instalar Spotipy, creamos una aplicación en la [página de desarrolladores de Spotify](https://developer.spotify.com/) y guardamos el ID de cliente y clave secreta.
