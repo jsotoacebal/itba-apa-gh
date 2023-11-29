@@ -317,7 +317,7 @@ number_cols = ['valence', 'year', 'acousticness', 'danceability', 'duration_ms',
 * Después de instalar Spotipy, creamos una aplicación en la [página de desarrolladores de Spotify](https://developer.spotify.com/) y guardamos el ID de cliente y clave secreta.
 """
 
-!pip install spotipy
+pip install spotipy
 
 pip install spotipy --upgrade
 
