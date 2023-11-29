@@ -312,7 +312,33 @@ data['year'] = data['year'].dt.year
 number_cols = ['valence', 'year', 'acousticness', 'danceability', 'duration_ms', 'energy', 'explicit',
                'instrumentalness', 'liveness', 'loudness', 'popularity', 'speechiness', 'tempo']
 
+<<<<<<< HEAD:copia_de_music_recommendation_system.py
 """## Spoti"""
+=======
+"""## Spotipy
+* [Spotipy](https://spotipy.readthedocs.io/en/2.16.1/) es un cliente de Python para la API web de Spotify que facilita a los desarrolladores obtener datos y consultar el catálogo de canciones de Spotify. Lo instalamos usando `pip install spotipy`.
+* Después de instalar Spotipy, creamos una aplicación en la [página de desarrolladores de Spotify](https://developer.spotify.com/) y guardamos el ID de cliente y clave secreta.
+"""
+
+pip install spotipy
+
+pip install spotipy --upgrade
+
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
+from collections import defaultdict
+
+client_id = '4035349ceac545928cdda92296170ad5'
+client_secret = '5696d44288b4451189a57125e06a98af'
+
+auth_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
+sp = spotipy.Spotify(auth_manager=auth_manager)
+
+from collections import defaultdict
+from sklearn.metrics import euclidean_distances
+from scipy.spatial.distance import cdist
+import difflib
+>>>>>>> 64cbfd566f8c1118d104c0d785fdb659d24b0db7:music_recommendation_system.py
 
 # Function to retrieve song data for a given song name
 def get_song_data(name, data):
